@@ -38,7 +38,6 @@ export default function Header() {
         </nav>
       </header>
 
-      {/* overlay dark */}
       {openMenu && (
         <div
           className='z-40 fixed inset-0 bg-black/40'
@@ -46,13 +45,11 @@ export default function Header() {
         ></div>
       )}
 
-      {/* mobile menu */}
       <aside
         className={`fixed top-0 left-0 bg-white w-[55vw] sm:w-[23vw] h-screen z-50 flex flex-col justify-between py-6 px-6 transition-transform duration-500 ease-in-out ${
           openMenu ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
-        {/* top section */}
         <div>
           <div className='flex justify-between items-center mt-8'>
             <Image
