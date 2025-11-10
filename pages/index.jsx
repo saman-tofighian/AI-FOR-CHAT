@@ -1,3 +1,4 @@
+import Conversations from '@/Components/Conversations/Conversations';
 import Header from '@/Components/Header/Header';
 import Motto from '@/Components/Motto/Motto';
 import Work from '@/Components/Work/Work';
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Motto />
       <Work />
+      <Conversations />
     </main>
   );
 }
