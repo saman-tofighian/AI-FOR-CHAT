@@ -1,4 +1,5 @@
 import Conversations from '@/Components/Conversations/Conversations';
+import Gallery from '@/Components/Gallery/Gallery';
 import Header from '@/Components/Header/Header';
 import Motto from '@/Components/Motto/Motto';
 import Work from '@/Components/Work/Work';
@@ -10,6 +11,7 @@ export default function Home() {
       <Motto />
       <Work />
       <Conversations />
+      <Gallery />
     </main>
   );
 }
