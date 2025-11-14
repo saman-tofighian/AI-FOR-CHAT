@@ -1,5 +1,7 @@
 @import 'tailwindcss';
-
+* {
+  user-select: none;
+}
 body {
   width: 100%;
   font-size: 100%;
