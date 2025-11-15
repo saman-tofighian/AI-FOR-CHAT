@@ -3,12 +3,12 @@ import { FiArrowUpRight } from 'react-icons/fi';
 
 export default function Library() {
   const items = [
-    { name: 'WELYTICS', icon: '/icons/welytics.svg' },
-    { name: 'SYMTRIC', icon: '/icons/symtric.svg' },
-    { name: 'SYMTRIC', icon: '/icons/symtric.svg' },
-    { name: 'JIGGLE', icon: '/icons/jiggle.svg' },
-    { name: 'Wishlep', icon: '/icons/wishlep.svg' },
-    { name: 'WELYTICS', icon: '/icons/welytics.svg' },
+    { icon: '/img/welytics.svg' },
+    { icon: '/img/symtric.svg' },
+    { icon: '/img/symtric.svg' },
+    { icon: '/img/jiggle.svg' },
+    { icon: '/img/wishlep.svg' },
+    { icon: '/img/welytics.svg' },
   ];
 
   return (
@@ -24,17 +24,16 @@ export default function Library() {
       />
 
       <div className='z-10 relative gap-10 grid grid-cols-12 mt-32 w-full'>
-        <div className='col-span-12 md:col-span-5'>
+        <div className='col-span-12 md:col-span-12 xl:col-span-7 text-center'>
           <h3 className='font-semibold text-[3rem] text-white md:text-[3.75rem] leading-tight'>
             Integrate your UI <br /> Library with ours
           </h3>
-
-          <p className='mt-5 text-[#787a88] text-[1.125rem]'>
+          ``
+          <p className='mt-5 xl:w-[50%] text-[#787a88] text-[1.125rem]'>
             Nunc et tellus non erat accumsan aliquam eget non mi. Integer
             fringilla pellentesque finibus.
           </p>
-
-          <div className='mt-7 w-full'>
+          <div className='flex justify-center mt-7 w-full'>
             <button className='flex justify-center items-center gap-x-2 bg-[#A766E9] hover:bg-white px-7 py-3.5 rounded-3xl text-black hover:text-[#A766E9] duration-300 cursor-pointer'>
               LEARN MORE
               <FiArrowUpRight />
@@ -42,16 +41,13 @@ export default function Library() {
           </div>
         </div>
 
-        <div className='gap-5 grid grid-cols-2 md:grid-cols-2 col-span-12 md:col-span-7 xl:col-span-5 mt-10 md:mt-0'>
+        <div className='gap-12 grid grid-cols-1 md:grid-cols-1 col-span-12 md:col-span-7 xl:col-span-4 mt-10 md:mt-0 border border-e-red-600'>
           {items.map((item, index) => (
             <div
               key={index}
-              className='flex items-center gap-3 bg-white/10 hover:bg-white/20 backdrop-blur-xl p-5 border border-white/20 rounded-2xl duration-300'
+              className='flex justify-center items-center gap-3 bg-white/10 hover:bg-white/20 backdrop-blur-xl p-5 border border-t-[#1362d880] border-l-[#1362d880] rounded-2xl duration-300'
             >
-              <Image src={item.icon} width={28} height={28} alt={item.name} />
-              <span className='font-semibold text-white tracking-wide'>
-                {item.name}
-              </span>
+              <Image src={item.icon} width={122} height={28} alt={item.name} />
             </div>
           ))}
         </div>
