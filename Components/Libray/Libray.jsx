@@ -23,8 +23,8 @@ export default function Library() {
         className='top-[18%] left-1/2 z-10 absolute opacity-90 -translate-x-1/2'
       />
 
-      <div className='z-10 relative gap-10 grid grid-cols-12 mt-32 w-full'>
-        <div className='col-span-12 md:col-span-12 xl:col-span-7 text-center'>
+      <div className='z-10 relative gap-y-12 xl:gap-x-10 xl:gap-y-0 grid grid-cols-12 mt-32 w-full'>
+        <div className='col-span-12 md:col-span-12 xl:col-span-7 text-center xl:text-start'>
           <h3 className='font-semibold text-[3rem] text-white md:text-[3.75rem] leading-tight'>
             Integrate your UI <br /> Library with ours
           </h3>
@@ -33,7 +33,7 @@ export default function Library() {
             Nunc et tellus non erat accumsan aliquam eget non mi. Integer
             fringilla pellentesque finibus.
           </p>
-          <div className='flex justify-center mt-7 w-full'>
+          <div className='flex justify-center xl:justify-start mt-7 w-full'>
             <button className='flex justify-center items-center gap-x-2 bg-[#A766E9] hover:bg-white px-7 py-3.5 rounded-3xl text-black hover:text-[#A766E9] duration-300 cursor-pointer'>
               LEARN MORE
               <FiArrowUpRight />
@@ -41,7 +41,7 @@ export default function Library() {
           </div>
         </div>
 
-        <div className='gap-12 grid grid-cols-1 md:grid-cols-1 col-span-12 md:col-span-7 xl:col-span-4 mt-10 md:mt-0 border border-e-red-600'>
+        <div className='gap-12 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-2 col-span-12 md:col-span-12 xl:col-span-4 mt-10 md:mt-0'>
           {items.map((item, index) => (
             <div
               key={index}
@@ -52,11 +52,6 @@ export default function Library() {
           ))}
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <br />
       <br />
       <br />
