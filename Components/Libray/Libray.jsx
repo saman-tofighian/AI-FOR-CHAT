@@ -52,10 +52,6 @@ export default function Library() {
           ))}
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
     </section>
   );
 }
