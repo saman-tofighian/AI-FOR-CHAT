@@ -1,5 +1,6 @@
 import Banner from '@/Components/Banner/Banner';
 import Conversations from '@/Components/Conversations/Conversations';
+import Footer from '@/Components/Footer/Footer';
 import Gallery from '@/Components/Gallery/Gallery';
 import Header from '@/Components/Header/Header';
 import Libray from '@/Components/Libray/Libray';
@@ -16,6 +17,7 @@ export default function Home() {
       <Gallery />
       <Libray />
       <Banner />
+      <Footer />
     </main>
   );
 }
