@@ -23,7 +23,7 @@ export default function Footer() {
       />
 
       <div className='z-20 relative gap-10 grid grid-cols-12 w-full'>
-        <div className='col-span-12 md:col-span-4'>
+        <div className='col-span-12 lg:col-span-4'>
           <div className='flex items-center gap-3'>
             <div className='bg-white rounded-full w-6 h-6'></div>
             <span className='font-medium text-[1.4rem] text-white'>
